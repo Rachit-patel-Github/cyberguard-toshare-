@@ -1,0 +1,13 @@
+# Environment files and local runtime output
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.vite/
+
+# Downloaded training corpora must not be committed.
+data/raw/
+
+# Base44 links are local to a developer environment.
+base44/.app.jsonc

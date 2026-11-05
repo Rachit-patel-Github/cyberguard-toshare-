@@ -1,0 +1,47 @@
+{
+  "name": "ScamAlert",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "banking",
+        "upi",
+        "fake_job",
+        "investment",
+        "whatsapp",
+        "email_phishing",
+        "social_media",
+        "qr_code"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "description",
+    "severity"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "generated_by": "scripts/train_local_models.py",
+  "models": [
+    "message",
+    "email",
+    "website"
+  ],
+  "limitations": [
+    "URL model uses character patterns and popular domains as a benign proxy; it is not a reputation service.",
+    "Phone, QR-image, and screenshot reputation require separately licensed labeled data or a live reputation provider.",
+    "Do not use model output as the sole security decision."
+  ]
+}

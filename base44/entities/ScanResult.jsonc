@@ -1,0 +1,52 @@
+{
+  "name": "ScanResult",
+  "type": "object",
+  "properties": {
+    "scan_type": {
+      "type": "string",
+      "enum": [
+        "website",
+        "phone",
+        "email",
+        "message",
+        "qr_code",
+        "screenshot"
+      ]
+    },
+    "input_value": {
+      "type": "string"
+    },
+    "risk_score": {
+      "type": "number"
+    },
+    "trust_level": {
+      "type": "string",
+      "enum": [
+        "safe",
+        "low_risk",
+        "medium_risk",
+        "high_risk",
+        "dangerous"
+      ]
+    },
+    "threat_type": {
+      "type": "string"
+    },
+    "ai_explanation": {
+      "type": "string"
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "scan_type",
+    "input_value"
+  ]
+}
